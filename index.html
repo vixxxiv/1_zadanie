@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vix — Портфолио (mobile‑first)</title>
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <a class="pill" href="#main" style="position:absolute; left:-9999px; top:auto;">Пропустить навигацию</a>
+
+  <!-- ===== ХЭДЕР ===== -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Основная навигация">
+      <a class="logo" href="#top" aria-label="На главную">
+        <span class="logo-mark" aria-hidden="true">vix</span>
+        <span>Vix</span>
+      </a>
+      <nav class="desk-nav" aria-label="Навигация по разделам">
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Мобильные табы -->
+    <div class="tabs-wrap">
+      <div class="tabs container" role="tablist" aria-label="Быстрая навигация">
+        <a role="tab" href="#about">Обо мне</a>
+        <a role="tab" href="#skills">Навыки</a>
+        <a role="tab" href="#portfolio">Портфолио</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <!-- ===== ОБО МНЕ ===== -->
+    <section id="about" class="section">
+      <div class="hero-grid">
+        <figure class="avatar card">
+          <!-- Векторный аватар (SVG) без внешних источников -->
+          <img alt="Векторный аватар" src="img/me.png"/>
+        </figure>
+        <div>
+          <span class="pill">Графический дизайнер</span>
+          <h1 style="margin:.35rem 0 0; font-size: clamp(1.6rem, 1.1rem + 2.5vw, 2.2rem);">Виктория Новожилова</h1>
+          <p style="color: var(--subtext); max-width: 65ch;">Создаю визуальные системы и айдентики, упаковку и рекламные материалы, сочетая эстетику, читаемость и цели бизнеса.</p>
+          <div class="qualities">
+            <span class="pill">Ответственность</span>
+            <span class="pill">Командная работа</span>
+            <span class="pill">Креативность</span>
+            <span class="pill">Внимание к деталям</span>
+            <span class="pill">Пунктуальность</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== НАВЫКИ ===== -->
+    <section id="skills" class="section">
+      <div class="card skills">
+        <h2>Навыки</h2>
+        <p style="color: var(--subtext); max-width: 72ch;">Уверенно владею периферией Adobe для графического дизайна (Illustrator, Photoshop, InDesign, XD/Figma), верстаю на HTML и CSS, понимаю основы UX/UI и препресс.</p>
+        <div class="skills-grid">
+          <div class="skill card"><div class="icon">Ai</div><div><strong>Adobe Illustrator</strong><div style="color:var(--subtext)">Вектор, логотипы, айдентика</div></div></div>
+          <div class="skill card"><div class="icon">Ps</div><div><strong>Adobe Photoshop</strong><div style="color:var(--subtext)">Ретушь, коллажи, цвет</div></div></div>
+          <div class="skill card"><div class="icon">Id</div><div><strong>Adobe InDesign</strong><div style="color:var(--subtext)">Полиграфия, каталоги</div></div></div>
+          <div class="skill card"><div class="icon">Fig</div><div><strong>Figma</strong><div style="color:var(--subtext)">Прототипы, компоненты</div></div></div>
+          <div class="skill card"><div class="icon">HTML</div><div><strong>HTML</strong><div style="color:var(--subtext)">Семантика, адаптив</div></div></div>
+          <div class="skill card"><div class="icon">CSS</div><div><strong>CSS</strong><div style="color:var(--subtext)">Grid/Flex, анимации</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ПОРТФОЛИО ===== -->
+    <section id="portfolio" class="section">
+      <h2 style="margin-bottom:12px;">Портфолио</h2>
+      <div class="portfolio-grid">
+        <article class="project">
+          <div class="thumb">
+            <img alt="Проект 1 — абстрактный постер" src="img/friggy.jpg"/>
+          </div>
+          <button class="btn-overlay">Подробнее</button>
+        </article>
+        <article class="project">
+          <div class="thumb">
+            <img alt="Проект 2 — геометрия" src="img/logo.jpg"/>
+          </div>
+          <button class="btn-overlay">Подробнее</button>
+        </article>
+        <article class="project">
+          <div class="thumb">
+            <img alt="Проект 3 — градиентные волны" src="img/pixelcode.jpg"/>
+          </div>
+          <button class="btn-overlay">Подробнее</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== ПОДВАЛ ===== -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="pill" style="margin-bottom:.5rem;">Контакты</div>
+        <p>Telegram: <a href="https://t.me/your_username" target="_blank" rel="noopener">@vixxxtract</a></p>
+        <p style="margin-top:10px;">Время, затраченное на создание сайта: <strong id="buildTime">≈ 1.5 часа</strong></p>
+      </div>
+      <div>
+        <div class="pill" style="margin-bottom:.5rem;">Функционал сайта</div>
+        <ul class="features">
+          <li>Переключение светлой/тёмной темы (сохранение выбора)</li>
+          <li>Mobile‑first адаптивная вёрстка</li>
+          <li>Якорная навигация и плавная прокрутка</li>
+          <li>SVG‑изображения встроены, работает офлайн</li>
+          <li>Анимация кнопок «Подробнее» (Web Animations API)</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Переключение темы
+    const root=document.documentElement; const themeToggle=document.getElementById('themeToggle'); const themeIcon=document.getElementById('themeIcon');
+    function setIcon(){ themeIcon.innerHTML=root.classList.contains('theme-light')
+      ? '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>'
+      : '<circle cx="12" cy="12" r="5"/>'+
+        '<line x1="12" y1="1" x2="12" y2="3"/>'+
+        '<line x1="12" y1="21" x2="12" y2="23"/>'+
+        '<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>'+
+        '<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>'+
+        '<line x1="1" y1="12" x2="3" y2="12"/>'+
+        '<line x1="21" y1="12" x2="23" y2="12"/>'+
+        '<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>'+
+        '<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
+    }
+    themeToggle.addEventListener('click',()=>{root.classList.toggle('theme-light'); setIcon();}); setIcon();
+
+    // Анимация кнопок при наведении (Web Animations API)
+    document.querySelectorAll('.btn-overlay').forEach(btn=>{
+      btn.addEventListener('mouseenter',()=>{
+        btn.animate([
+          { transform:'translateX(-50%) scale(1.05)', opacity:1 },
+          { transform:'translateX(-50%) scale(1.18)', opacity:1 },
+          { transform:'translateX(-50%) scale(1.10)', opacity:1 }
+        ],{ duration:380, easing:'cubic-bezier(.22,.61,.36,1)', iterations:1 });
+      });
+    });
+  </script>
+</body>
+</html>
